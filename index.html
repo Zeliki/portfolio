@@ -6,13 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- Titles -->
-	<title>Portfolio</title>
+	<title>HTML Верстальщик Сайтов Шеремет Виктор</title>
 	<meta name="keywords" content="Ключевые слова...">
     <meta name="description" content="Описание страницы...">
 
 	<!-- Syles -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="fonts/noto-webfont/noto.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+
+	<!-- Owl Carousel -->
+    <!-- <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css"> -->
 
 	<!-- FavIcons -->
 	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" />
@@ -34,13 +39,50 @@
 
 
 	<!-- header-->
-	<div class="block">
-		Шапка страницы
+
+	<div class="header">
+		<div class="header__inner">
+
+			<nav class="navigation">
+				<div class="navigation__toogle navigation__toogle--fixed">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<ul class="navigation__list">
+					<li><a href="#resume">Резюме</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header__centered-content">
+				<div class="user-photo user-photo--shadow">
+					<img src="usercontent/img/photo-small.jpg" alt="html верстальщик сайтов Шеремет Виктор">
+				</div>
+
+				<h1 class="header__title">Шеремет Виктор</h1>
+				<h1 class="header__subtitle">html верстальщик сайтов</h1>
+			</div>
+
+			<a href="#resume" class="mouse_scroll">
+
+				<div class="mouse">
+					<div class="wheel"></div>
+				</div>
+				<div>
+					<span class="m_scroll_arrows unu"></span>
+					<span class="m_scroll_arrows doi"></span>
+					<span class="m_scroll_arrows trei"></span>
+				</div>
+			</a>
+
+		</div>
 	</div>
+	
+
+
 	<!-- // header -->
 
 	<!-- Резюме -->
-	<div class="container">
+	<div id="resume" class="container">
 		<div class="row">
 
 			<!-- Фотография пользователя -->
@@ -86,7 +128,7 @@
 	<div class="line"></div>
 
 	<!-- Портфолио -->
-	<div class="container">
+	<div id="portfolio" class="container">
 
 		<div class="block">
 			Портфолио
@@ -136,7 +178,7 @@
 
 
 	<!-- Контакты -->
-	<div class="block-bg">		
+	<div id="contacts" class="block-bg">		
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
@@ -183,17 +225,16 @@
 
 
 
-
-
-
-
-
-
-
-
+	<!-- Vendors scripts -->
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<!-- <script src="libs/owlcarousel/owl.carousel.min.js"></script> -->
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+
+	<!-- User script -->
+	<script src="js/navigation.js"></script>
 	<script src="js/main.js"></script>
+
 
 </body>
 </html>
