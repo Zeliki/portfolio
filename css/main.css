@@ -140,7 +140,7 @@ p {
     position: absolute;
   }
 }
-.navigation .navigation__toogle {
+.navigation .navigation__toggle {
   display: block;
   font-size: 38px;
   position: absolute;
@@ -150,11 +150,11 @@ p {
   z-index: 2;
 }
 @media (min-width: 768px) {
-  .navigation .navigation__toogle {
+  .navigation .navigation__toggle {
     display: none;
   }
 }
-.navigation .navigation__toogle--fixed {
+.navigation .navigation__toggle--fixed {
   position: fixed;
 }
 .navigation ul.navigation__list {
