@@ -91,8 +91,14 @@ body {
 }
 p {
   font-size: 14px;
-  line-height: 24px;
-  color: #777;
+  line-height: 22px;
+  color: #000;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 .block {
   background: #ff832b;
@@ -223,6 +229,19 @@ p {
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.user-photo--big {
+  max-width: 100%;
+  height: auto;
+  -webkit-border-radius: 110px;
+  border-radius: 110px;
+  background-image: url("../img/placeholders/user-avatar-placeholder-big.jpg");
+}
+@media (min-width: 1200px) {
+  .user-photo--big {
+    width: 205px;
+    height: 205px;
+  }
 }
 .user-photo--shadow {
   box-shadow: 0px 0px 40px 0px #48779f;
@@ -398,6 +417,102 @@ a.mouse_scroll:focus {
   100% {
     opacity: 1;
   }
+}
+.section {
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 88px;
+    padding-bottom: 60px;
+  }
+}
+.section--bottom-line {
+  border-bottom: 1px solid #e9eff3;
+}
+.section--bg-laptop {
+  background-repeat: no-repeat;
+  background-position: right 70%;
+}
+@media (min-width: 1500px) {
+  .section--bg-laptop {
+    background-image: url("../img/bg/laptop.png");
+  }
+}
+.heading {
+  font-size: 32px;
+  color: #0052c2;
+  margin: 0 0 9px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .heading {
+    font-size: 42px;
+    margin: 0 0 19px;
+  }
+}
+.heading--medium {
+  line-height: 28px;
+  font-size: 24px;
+  margin: 16px 0 15px;
+  color: #000;
+}
+.heading--resume-desc {
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+.heading--resume-desc .heading--user-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
+}
+.definition-list {
+  margin: 0px 0 14px;
+  padding: 0;
+  list-style-type: none;
+}
+.definition-list__item {
+  margin: 0 0 13px;
+  padding: 0;
+}
+.definition-list__def {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #0052c2;
+  text-transform: uppercase;
+}
+.definition-list__desc {
+  font-size: 14px;
+  line-height: 26px;
+}
+@media (min-width: 768px) {
+  .definition-list__desc {
+    font-size: 16px;
+  }
+}
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  margin-top: 27px;
+  padding: 11px 26px 14px;
+  background-color: #0052c2;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+}
+.button .fa {
+  font-size: 18px;
+  margin-right: 5px;
 }
 .header {
   position: relative;
