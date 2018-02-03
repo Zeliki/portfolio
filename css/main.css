@@ -461,11 +461,11 @@ a.mouse_scroll:focus {
 .heading--medium {
   line-height: 28px;
   font-size: 24px;
-  margin: 16px 0 15px;
+  margin: 29px 0 17px;
   color: #000;
 }
 .heading--resume-desc {
-  margin-bottom: 24px;
+  margin-bottom: 0;
   font-weight: 400;
 }
 .heading--resume-desc .heading--user-name {
@@ -482,6 +482,9 @@ a.mouse_scroll:focus {
 .definition-list__item {
   margin: 0 0 13px;
   padding: 0;
+}
+.definition-list__item--mb37 {
+  margin-bottom: 37px;
 }
 .definition-list__def {
   font-size: 14px;
@@ -504,7 +507,7 @@ a.mouse_scroll:focus {
   font-size: 16px;
   font-weight: 700;
   color: #FFF;
-  margin-top: 27px;
+  margin-top: 6px;
   padding: 11px 26px 14px;
   background-color: #0052c2;
   -webkit-border-radius: 60px;
