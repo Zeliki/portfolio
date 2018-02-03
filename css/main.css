@@ -424,14 +424,14 @@ a.mouse_scroll:focus {
 }
 @media (min-width: 768px) {
   .section {
-    padding-top: 50px;
-    padding-bottom: 90px;
+    padding-top: 52px;
+    padding-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
   .section {
-    padding-top: 88px;
-    padding-bottom: 60px;
+    padding-top: 83px;
+    padding-bottom: 90px;
   }
 }
 .section--bottom-line {
