@@ -101,7 +101,7 @@ p {
   }
 }
 .block {
-  background: #03a9f4;
+  background: #ef6c00;
   padding: 20px;
   color: #fff;
   font-size: 32px;
@@ -114,9 +114,17 @@ p {
   background-color: #ff9951;
   padding: 30px 0;
 }
-.block-bg-copyright {
+.copyright {
   background-color: #ef6c00;
   padding: 30px 0;
+}
+.copyright p {
+  color: #FFF;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+.copyright__label {
+  font-size: 16px;
 }
 .line {
   border-top: 1px solid #ef6c00;
