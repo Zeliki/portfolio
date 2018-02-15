@@ -7,18 +7,17 @@
 
 	<!-- Titles -->
 	<title>HTML Верстальщик Сайтов Шеремет Виктор</title>
-	<meta name="keywords" content="Ключевые слова...">
-    <meta name="description" content="Описание страницы...">
+	<meta name="keywords" content="psd2html, верстка сайтов, верстальщик сайтов">
+    <meta name="description" content="html верстальщик сайтов Шеремет Виктор">
 
 	<!-- Syles -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="fonts/noto-webfont/noto.css">
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
 
-	<!-- Owl Carousel -->
-    <!-- <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css"> -->
+	<!-- Fonts -->
+	<link rel="stylesheet" type="text/css" href="fonts/noto-webfont/noto.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
 
 	<!-- FavIcons -->
 	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" />
@@ -39,19 +38,17 @@
 	<![endif]-->
 
 
-	<!-- header-->
-
+	<!-- Header-->
 	<div class="header">
 		<div class="header__inner">
-
 			<nav class="navigation">
 				<div class="navigation__toggle navigation__toggle--fixed">
 					<i class="fa fa-bars" aria-hidden="true"></i>
 				</div>
 				<ul class="navigation__list">
-					<li><a href="#resume">Резюме</a></li>
-					<li><a href="#portfolio">Портфолио</a></li>
-					<li><a href="#contacts">Контакты</a></li>
+					<li><a class="link link--underline-effect" href="#resume">Резюме</a></li>
+					<li><a class="link link--underline-effect" href="#portfolio">Портфолио</a></li>
+					<li><a class="link link--underline-effect" href="#contacts">Контакты</a></li>
 				</ul>
 			</nav>
 			
@@ -64,7 +61,7 @@
 				<h1 class="header__subtitle">html верстальщик сайтов</h1>
 			</div>
 
-			<a href="#resume" class="mouse_scroll">
+			<a href="#resume" rel='m_PageScroll2id' class="mouse_scroll">
 				<div class="mouse">
 					<div class="wheel"></div>
 				</div>
@@ -77,10 +74,7 @@
 
 		</div>
 	</div>
-	
-
-
-	<!-- // header -->
+	<!-- // Header -->
 
 	<!-- Резюме -->
 	<div id="resume" class="section section--bottom-line section--bg-laptop">
@@ -100,9 +94,15 @@
 				<div class="col-sm-10 col-lg-9">
 					<div class="heading">Резюме</div>
 					<div class="heading heading--resume-desc">
-						<p><span class="heading heading--user-name">Шеремет Виктор</span><br>
-						31 год, Минск, Республика Беларусь</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, error!</p>
+						<p>
+							<span class="heading heading--user-name">
+								Шеремет Виктор
+							</span><br>
+								31 год, Минск, Республика Беларусь
+						</p>
+						<p>
+							Никогда не прекращай мечтать. Однажды, я стану крутым веб-разработчиком, ведь путь в тысячу миль начинается с одного маленького шага. Сначала верстка сайтов, а дальше больше. Готов выполнить Ваш заказ. Результатом будут довольны все — Вы и я.
+						</p>
 					</div>
 
 					<!-- Опыт и образование -->
@@ -114,33 +114,34 @@
 							</div>
 
 							<ul class="definition-list">
+
 								<li class="definition-list__item">
 									<div class="definition-list__def">
-										Декабрь — настоящее время
+										Декабрь 2017 — настоящее время
 									</div>
 									<div class="definition-list__desc">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quia!.</p>
+										<p>Верстальщик ваших сайтов.</p>
 									</div>
 								</li>
-								<li class="definition-list__item">
+
+								<li class="definition-list__item definition-list__item--mb43">
 									<div class="definition-list__def">
-										октябрь 2015 — Декабрь 2016
+										октябрь 2015 — Декабрь 2017
 									</div>
 									<div class="definition-list__desc">
-										<p>Фрилансер, веб-дизайнер.</p>
+										<p>Интернет-маркетолог (директолог)</p>
 									</div>
-								</li>					
-							</ul>
+								</li>
 
-							<ul class="definition-list">
-								<li class="definition-list__item definition-list__item--mb37">
+								<!-- <li class="definition-list__item definition-list__item____mb37">
 									<div class="definition-list__def">
 										Сентбярь 2014 — Октябрь 2015
 									</div>
 									<div class="definition-list__desc">
 										<p>Lorem ipsum dolor sit amet.</p>
 									</div>
-								</li>							
+								</li> -->	
+
 							</ul>
 
 						</div>
@@ -156,7 +157,7 @@
 										декабрь 2017
 									</div>
 									<div class="definition-list__desc">
-										<p>Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru</p>
+										<p>Курсы по верстке сайтов HTML5, CSS3 — школа онлайн-обучения веб-разработке <a href="http://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
 									</div>
 								</li>					
 								<li class="definition-list__item">
@@ -164,7 +165,7 @@
 										2004 — 2010
 									</div>
 									<div class="definition-list__desc">
-										<p>Белорусский Государственный Университет Информатики и Радиоэлектроники, специальность Радиотехника.</p>
+										<p>Белорусский Государственный Университет Информатики и Радиоэлектроники. Специальность Радиотехника.</p>
 									</div>
 								</li>							
 							</ul>							
@@ -173,10 +174,16 @@
 					</div>
 					<!-- // Опыт и образование -->
 
-					<div class="button">
-						<i class="fa fa-download" aria-hidden="true"></i>
-						Скачать резюме
+					<!--Скачать резюме-->
+					<div class="row">
+						<div class="col-sm-6">
+								<a class="button button--download" href="usercontent/pdf/resume_-_victor_sharamet.pdf" download>
+									<i class="fa fa-download" aria-hidden="true"></i>
+									Скачать резюме
+								</a>
+						</div>
 					</div>
+					<!--//Скачать резюме-->
 
 				</div>
 				<!-- // Резюме пользователя -->
@@ -194,7 +201,7 @@
 			<div class="filter-block">
 				<ul class="filter-block__block">
 					<li class="filter-block__element">
-						<span class="filter-block__button--active filter-block__button filter" data-filter="all">Все</span>
+						<span class="filter-block__button filter active" data-filter="all">Все</span>
 					</li>
 					<li class="filter-block__element">
 						<span class="filter-block__button filter" data-filter=".html-css">HTML+CSS</span>
@@ -226,7 +233,7 @@
 							<img src="usercontent/img/project_organica.jpg" alt="Учебный проект Organica">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Учебный проект Organica</a>
+							<a href="victorsharamet.zzz.com.ua/organica/index.html" target="_blank">Учебный проект Organica</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка одностраничного сайта по PSD-макету.							
@@ -246,7 +253,7 @@
 							<img src="usercontent/img/project_apollo.jpg" alt="Учебный макет Аполло">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Учебный макет Аполло</a>
+							<a href="victorsharamet.zzz.com.ua/apollo/index.html" target="_blank">Учебный макет Аполло</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка лендинга хостинг компании. Мобильная адаптивность.							
@@ -266,7 +273,7 @@
 							<img src="usercontent/img/project_portfolio.jpg" alt="Личный сайт портфолио">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Личный сайт портфолио</a>
+							<a href="github.com/zeliki" target="_blank">Личный сайт портфолио</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка личного сайта портфолио на котором вы сейчас находитесь=)							
@@ -286,7 +293,7 @@
 							<img src="usercontent/img/project_auto.jpg" alt="Промо сайт автомобиля">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Промо сайт автомобиля</a>
+							<a href="http://webcademy.ru" target="_blank">Промо-сайт автомобиля</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка сайта для презентации концепта автомобиля.							
@@ -306,7 +313,7 @@
 							<img src="usercontent/img/project_moto.jpg" alt="Магазин мотоциклов">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Магазин мотоциклов</a>
+							<a href="http://webcademy.ru" target="_blank">Магазин мотоциклов</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка лендинга для компании Indian Motorcycles.							
@@ -326,7 +333,7 @@
 							<img src="usercontent/img/project_music.jpg" alt="Магазин аудиотехники">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Магазин аудиотехники</a>
+							<a href="http://webcademy.ru" target="_blank">Магазин аудиотехники</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка страниц для магазина винтажной аудиотехники.							
@@ -378,13 +385,13 @@
 	<!-- // Контакты -->
 
 	<!-- Копирайт -->
-	<div class="block-bg-copyright">
-		<div class="container">
-			<div class="block">
-				Копирайт
-			</div>
-		</div>
-	</div>
+	<div class="copyright">
+    	<div class="container">
+    		<p class="copyright__label">© 2018 Виктор Шарамет</p>
+    		<p>Веб-разработчик из Минска, занимаюсь версткой и созданием сайтов.</p>
+    		<p>Этот сайт сделан в рамках прохождения обучения по верстке от <a href="http://webcademy.ru" target="_blank">WebCademy.ru</a></p>  		
+    	</div>
+    </div>
 	<!-- // Копирайт -->
 
 

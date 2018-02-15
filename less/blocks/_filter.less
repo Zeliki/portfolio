@@ -39,19 +39,33 @@
 
 .filter-block__button {
 	display: inline-block;
-	color: #CECECE;
+	color: #000;
 	cursor: pointer;
-	padding: 12px 31px 15px;
+	padding: 10px 29px 13px;
+	border: 2px solid @babypowder;
 	
-	&:hover {
-		color: #000;
+	
+	-webkit-transition: 0.2s ease-in;
+	   -moz-transition: 0.2s ease-in;
+	    -ms-transition: 0.2s ease-in;
+	     -o-transition: 0.2s ease-in;
+	        transition: 0.2s ease-in;
+	
+	&:hover, &:focus, &:active {
+		color: @orangelight;
 	}
 }
 
-.filter-block__button--active {
+// .filter-block__button--active {
+// 	padding: 10px 29px 13px;
+// 	border: 2px solid #fff;
+// 	color: #000;
+// }
+
+.filter-block__button.filter.active {
 	padding: 10px 29px 13px;
-	border: 2px solid @blueheading;
-	color: #000;
+	border: 2px solid @orangedark;
+	color: @orangedark;
 }
 
 #portfolio-projects .mix {
