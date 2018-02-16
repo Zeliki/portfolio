@@ -11,7 +11,7 @@ $form_from = trim($_POST["form_from"]);
 $message = "";
 
 foreach ( $_POST as $key => $value ) {
-	if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+	if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" && $key != "form_from" ) {
 		$message .= "
 		" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
 		<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
