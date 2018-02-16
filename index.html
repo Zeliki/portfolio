@@ -436,10 +436,11 @@
 				<div class="col-sm-6">
 					<div class="heading heading--medium heading--white heading--padding-top">Связаться со мной</div>
 
-					<form class="contact-form" action="php/mail.php" method="POST">
+					<form class="contact-form">
 
 						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="Мой персональный сайт">						
+						<input type="hidden" name="project_name" value="Мой персональный сайт">
+						<input type="hidden" name="form_from" value="admin@zeliki.github.io">					
 						<input type="hidden" name="admin_email" value="victor.sharamet@gmail.com">
 						<input type="hidden" name="form_subject" value="Сообщение с сайта">
 						<!-- END Hidden Required Fields -->

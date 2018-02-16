@@ -6,6 +6,7 @@ $c = true;
 $project_name = trim($_POST["project_name"]);
 $admin_email  = trim($_POST["admin_email"]);
 $form_subject = trim($_POST["form_subject"]);
+$form_from = trim($_POST["form_from"]);
 
 $message = "";
 
@@ -30,7 +31,7 @@ function adopt($text) {
 
 $headers = "MIME-Version: 1.0" . PHP_EOL .
 "Content-Type: text/html; charset=utf-8" . PHP_EOL .
-'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL .
+'From: '.adopt($project_name).' <'.$form_from.'>' . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 
 // Sending email to admin
@@ -45,6 +46,6 @@ function saveUserDataInFile($text){
 
 saveUserDataInFile($message);
 
-echo "<div class='contact-form__success'>Форма отправлена успешно!</div> ";
+echo "<div class='contact-form__success'>Форма отправлена успешно!</div>";
 
 ?>
