@@ -23,9 +23,11 @@ $(document).ready(function() {
 
 	// jQuery Validate JS
 	$(".contact-form").validate({
+
 		rules: {
 			name: { required: true },
 			email: { required: true, email: true },
+			phone: { required: true },
 			message: { required: true }
 		},
 
