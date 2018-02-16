@@ -42,9 +42,11 @@
 	<div class="header">
 		<div class="header__inner">
 			<nav class="navigation">
-				<div class="navigation__toggle navigation__toggle--fixed">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-				</div>
+				<!-- Navigation Icon -->
+				<button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+					<span>toggle menu</span>
+				</button>
+				<!-- // Navigation Icon -->				
 				<ul class="navigation__list">
 					<li><a class="link link--underline-effect" href="#resume">Резюме</a></li>
 					<li><a class="link link--underline-effect" href="#portfolio">Портфолио</a></li>
@@ -96,13 +98,13 @@
 					<div class="heading heading--resume-desc">
 						<p>
 							<span class="heading heading--user-name">
-								Шеремет Виктор
+								Шарамет Виктор
 							</span><br>
 								31 год, Минск, Республика Беларусь
 						</p>
 						<p>
-							Однажды, я стану крутым веб-разработчиком, ведь путь в тысячу миль начинается с одного маленького шага. Сначала верстка сайтов, а дальше больше. Готов выполнить Ваш заказ. Результатом будут довольны все — Вы и я.<br>
-							Занимаюсь версткой сайтов и посадочных страниц, писем для рассылок. Владею навыками работы с html, css, BEM-naming, flex, less, bootstrap, java script, gitbash, github, nodejs.
+							Готов выполнить Ваш заказ. Результатом будут довольны все — Вы и я.<br>
+							Занимаюсь версткой сайтов и Landing Page, писем для рассылок. Владею навыками работы с HTML, CSS, BEM-naming, Flex, LESS, SASS Bootstrap, JavaScript, Gitbash, Github, NodeJS.
 						</p>
 					</div>
 
@@ -133,15 +135,6 @@
 										<p>Интернет-маркетолог (директолог)</p>
 									</div>
 								</li>
-
-								<!-- <li class="definition-list__item definition-list__item____mb37">
-									<div class="definition-list__def">
-										Сентбярь 2014 — Октябрь 2015
-									</div>
-									<div class="definition-list__desc">
-										<p>Lorem ipsum dolor sit amet.</p>
-									</div>
-								</li> -->	
 
 							</ul>
 
@@ -176,7 +169,7 @@
 					<!-- // Опыт и образование -->
 
 					<!--Скачать резюме-->
-					<div class="row">
+					<div class="resume">
 						<div class="col-sm-6">
 								<a class="button button--download" href="usercontent/pdf/resume_-_victor_sharamet.pdf" download>
 									<i class="fa fa-download" aria-hidden="true"></i>
@@ -247,11 +240,11 @@
 				<div class="col-sm-4 mix bootstrap tutorial">
 					<div class="portfolio-item">						
 						<div class="portfolio-item__image">
-							<a href="usercontent/img/works/apollo.png" class="fancybox portfolio-item__image--hover" rel="group" title="Учебный макет Аполло">
+							<a href="usercontent/img/works/apollo.png" class="fancybox portfolio-item__image--hover" rel="group" title="Учебный макет Apollo">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
 							</a>
-							<img src="usercontent/img/project_apollo.jpg" alt="Учебный макет Аполло">
+							<img src="usercontent/img/project_apollo.jpg" alt="Учебный макет Apollo">
 						</div>
 						<div class="portfolio-item__title">
 							<a href="http://victorsharamet.zzz.com.ua/apollo" target="_blank">Учебный макет Аполло</a>
@@ -351,34 +344,124 @@
 	<!-- // Портфолио -->
 
 	<!-- Контакты -->
-	<div id="contacts" class="block-bg">		
+	<div id="contacts" class="block-bg contacts section section--bg-cloud section--padding-smaller">		
 		<div class="container">
 			<div class="row">
+				<!-- Контакты - текст -->
 				<div class="col-sm-6">
-					<div class="block">
-						Контакты - текст
+
+					<div class="heading heading--white">
+						Контакты
 					</div>
+
+					<div class="contacts__description">
+						<p>
+							Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.
+						</p>
+					</div>
+					
+					<!-- Контактные данные -->
 					<div class="row">
+
+						<!-- Email and Skype -->
 						<div class="col-lg-6">
-							<div class="block">
-								Email, Skype
-							</div>
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--lighter-bigger">
+										Email
+									</div>
+									<div class="definition-list__desc">
+										<p><a href="mailto:victor.sharamet@gmail.com">victor.sharamet@gmail.com</a></p>
+									</div>
+								</li>
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--lighter-bigger">
+										Skype
+									</div>
+									<div class="definition-list__desc definition-list__desc--skype">
+										<p><a href="skype:victor.sharamet?chat">victor.sharamet</a></p>
+									</div>
+								</li>				
+							</ul>
 						</div>
+						<!-- Email and Skype -->
+
+						<!-- Телефон и адрес -->
 						<div class="col-lg-6">
-							<div class="block">
-								Телефон, адрес
-							</div>
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--lighter-bigger">
+										Телефон
+									</div>
+									<div class="definition-list__desc definition-list__desc--contacts">
+										<p><a href="tel:+375 (29) 508-41-18">+375 (29) 508-41-18</a></p>
+									</div>
+								</li>
+								<li class="definition-list__item">
+									<div class="definition-list__def definition-list__def--lighter-bigger">
+										Адрес
+									</div>
+									<div class="definition-list__desc">
+										<p>Республика Беларусь, Минск</p>
+									</div>
+								</li>				
+							</ul>
 						</div>
-					</div>
-					<div class="block">
-						Социальные иконки
-					</div>
+					</div>					
+						<!-- Телефон и адрес -->					
+					<!-- // Контактные данные -->
+					
+						<!-- Социальные сети -->						
+						<ul class="definition-list">
+							<li class="definition-list__item">
+								<div class="definition-list__def definition-list__def--lighter-bigger">
+									Социальные сети
+								</div>
+								<div class="definition-list__desc">
+									<div class="social-icons">
+										<a href="http://github.com/Zeliki" class="fa fa-github" aria-hidden="true"></a>											
+										<a href="http://facebook.com/VictorSharamet" class="fa fa-facebook" aria-hidden="true"></a>
+										<a href="http://vk.com/victor.sharamet" class="fa fa-vk"></a>
+										<a href="https://instagram.com/victorsharamet" class="fa fa-instagram" aria-hidden="true"></a>
+									</div>
+								</div>
+							</li>											
+						</ul>													
+						<!-- // Социальные сети -->
 				</div>
+				
+				<!-- // Контакты - текст -->
+
+				<!-- Контакты - форма -->
 				<div class="col-sm-6">
-					<div class="block">
-						Форма
-					</div>
+					<div class="heading heading--medium heading--white heading--padding-top">Связаться со мной</div>
+
+					<form class="contact-form" action="php/mail.php" method="POST">
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Мой персональный сайт">						
+						<input type="hidden" name="admin_email" value="victor.sharamet@gmail.com">
+						<input type="hidden" name="form_subject" value="Сообщение с сайта">
+						<!-- END Hidden Required Fields -->
+
+						<input type="text" class="contact-form__input" name="name" placeholder="Имя">
+						<input type="text" class="contact-form__input" name="email" placeholder="Email">
+
+						<div class="clearfix">
+							<input type="text" class="contact-form__input contact-form__input--half-width" name="skype" placeholder="Skype">
+							<input type="text" class="contact-form__input contact-form__input--half-width" name="phone" placeholder="Телефон">
+						</div>
+
+						<div class="contact-form__bg-pencil">
+							<textarea class="contact-form__textarea" name="message" placeholder="Ваше сообщение" class="contact-form__textarea"></textarea>
+						</div>
+
+						<input type="submit" class="contact-form__submit" value="Отправить">						
+					</form>				
+				
 				</div>
+				<!-- // Контакты - форма -->
+
 			</div>
 		</div>
 	</div>
@@ -397,11 +480,11 @@
 	<!-- Vendors scripts -->
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<!-- <script src="libs/owlcarousel/owl.carousel.min.js"></script> -->
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 	<script src="libs/mixitup/jquery.mixitup.min.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="libs/jquery.validate/jquery.validate.js"></script>
 
 	<!-- User script -->
 	<script src="js/navigation.js"></script>
